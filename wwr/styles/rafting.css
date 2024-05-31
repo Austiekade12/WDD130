@@ -140,3 +140,75 @@ footer .sociallinks a img {
     width: 30px;
     height: 30px;
 }
+
+.company-info {
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--accent2-color);
+    border-radius: 10px;
+}
+
+.map iframe {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.employee-profiles {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.employee {
+    text-align: center;
+}
+
+.employee img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.contact-form {
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--accent2-color);
+    border-radius: 10px;
+}
+
+.contact-form label,
+.contact-form textarea,
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.contact-form fieldset {
+    margin-bottom: 10px;
+    border: none;
+}
+
+.contact-form legend {
+    font-weight: bold;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
