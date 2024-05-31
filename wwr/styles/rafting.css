@@ -141,7 +141,7 @@ footer .sociallinks a img {
     height: 30px;
 }
 
-.company-info {
+.company {
     margin: 20px;
     padding: 20px;
     background-color: var(--accent2-color);
@@ -170,45 +170,41 @@ footer .sociallinks a img {
     border-radius: 50%;
 }
 
-.contact-form {
+.contact {
     margin: 20px;
     padding: 20px;
     background-color: var(--accent2-color);
     border-radius: 10px;
 }
 
-.contact-form label,
-.contact-form textarea,
-.contact-form input[type="text"],
-.contact-form input[type="email"] {
+.contact label, .contact textarea, .contact input[type="text"], .contact input[type="email"] {
     display: block;
-    width: 100%;
+    width: 98%;
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid var(--secondary-color);
     border-radius: 5px;
 }
 
-.contact-form fieldset {
+.contact fieldset {
     margin-bottom: 10px;
     border: none;
 }
 
-.contact-form legend {
-    font-weight: bold;
+.contact legend {
+    font-weight: bolder;
 }
 
-.contact-form button {
+.contact button {
     padding: 10px 20px;
     background-color: var(--primary-color);
     color: var(--accent2-color);
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 16px;
 }
 
-.contact-form button:hover {
+.contact button:hover {
     background-color: var(--secondary-color);
     color: var(--accent1-color);
 }
