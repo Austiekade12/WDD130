@@ -99,13 +99,14 @@ h1, h2 {
 
 .hero article {
     position: absolute;
-    bottom: 1%;
+    bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
     background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
+    padding: 100px;
+    border-radius: 60px;
+    
+    max-width: 500px;
     font-style: var(--paragraph-font);
     color: var(--primary-color);
 }
@@ -118,18 +119,21 @@ h1, h2 {
 }
 
 .awaits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 20px;
     background-color: var(--accent2-color);
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
+
 .awaits img {
-    width: 300px;
+    width: 400px;
     height: 300px;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
+
 footer {
     text-align: center;
     padding: 10px;
@@ -344,4 +348,114 @@ footer p a {
 
 footer p a:hover {
     text-decoration: underline;
+}
+
+.hero3 {
+    position: relative;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.hero3 img {
+    width: 100%;
+    height: auto;
+}
+
+.hero3 h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: var(--primary-color);
+}
+
+.newsletter {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--accent2-color);
+    border: 1px solid var(--accent2-color);
+    border-radius: 100px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter input[type="text"], .newsletter input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.newsletter button:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+.cta {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--accent1-color);
+}
+
+.cta a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cta a:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: var(--accent2-color);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 500px;
+}
+
+.grid-item h3 {
+    color: var(--secondary-color);
+    margin: 10px 0;
+}
+
+.grid-item p {
+    padding: 10px;
 }
